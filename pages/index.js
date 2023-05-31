@@ -3,11 +3,13 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
   AiFillTwitterCircle, 
   AiFillLinkedin, 
-  AiFillYoutube
+  AiFillYoutube,
+  AiFillGithub
 }  from 'react-icons/ai';
 
 import Image from 'next/image';
 import deved from "../public/faaizuddin-transparent-image.png"
+
 import {useState} from "react";
 
 export default function Home() {
@@ -33,7 +35,7 @@ export default function Home() {
                 className="cursor-pointer text-2xl dark:text-white" 
                 />
               </li>
-              <li> <a className = " bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"href='https://www.linkedin.com/in/faaizuddinf/'> LinkedIn
+              <li> <a className = " bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='./public/Faaizuddin_Farooqui_2023_Resume_4.pdf' target= "_blank"> Resume
               </a> </li>
             </ul>
           </nav>
@@ -45,12 +47,15 @@ export default function Home() {
             <h3 className= "text-2xl py-2 md:text-3xl dark:text-white ">
               Developer and Student. 
             </h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'> Computer Science student at the University of Illinois Chicago </p>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>  </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <a href= "https://github.com/ffarooqui2" target = "_blank" className='dark:text-white'>
+              <AiFillGithub />
+            </a>
+            <a href= "https://www.linkedin.com/in/faaizuddinf/" target = "_blank" className='dark:text-white'>
+              <AiFillLinkedin />
+            </a>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
@@ -62,18 +67,16 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1'> Current Status & Goals </h3>
-            <p className ='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-3xl py-1 dark:text-teal-600 font-medium
+            '> Current Status & Goals </h3>
+            <p className ='text-md py-2 leading-8 text-gray-800 dark:text-white'>
                 Ive taken a couple CS classes, blah blah blah. I am currently a <span className='text-teal-500'> sophomore </span>at my university but I plan on graduating early.
             </p>
-            <p className ='text-md py-2 leading-8 text-gray-800'>
+            <p className ='text-md py-2 leading-8 text-gray-800 dark:text-white'>
                 I aspire to become a <span className='text-teal-500'> software engineer</span>.
             </p>
           </div>
         </section>
-
-
-
       </main>
     </div>
   );
